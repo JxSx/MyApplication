@@ -1,0 +1,44 @@
+//声明是Android程序____plugin:The id or implementation class of the plugin to apply to the project.
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        // 应用的包名
+        applicationId "com.glodon.myapplication"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+
+    // 编译类型/模式
+    buildTypes {
+        debug {
+            // debug模式
+        }
+        release {
+            //是否进行混淆（优化，变小）
+            minifyEnabled false
+            // 混淆文件的位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+}
+
+dependencies {
+    // 编译libs目录下所有的jar包
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //AppCompat (aka ActionBarCompat)是为了Android 4.0中的ActionBar的向后兼容到 Gingerbread（2.3） 系统
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile files('libs/butterknife-5.1.2.jar')
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    // 动画库
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.github.ksoichiro:android-observablescrollview:1.5.0'
+}

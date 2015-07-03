@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.MyTheme" parent="AppTheme">
+        <!--标题文字的颜色-->
+        <item name="android:textColorPrimary">#fff</item>
+        <!-- <item name="android:statusBarColor">#E84E40</item>-->
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">#E51C23</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">#E84E40</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated
+         which is used to tint widgets -->
+
+        <item name="colorAccent">#5677FC</item>
+        <!-- You can also set colorControlNormal, colorControlActivated
+         colorControlHighlight & colorSwitchThumbNormal. -->
+
+        <item name="windowActionBar">false</item>
+    </style>
+</resources>

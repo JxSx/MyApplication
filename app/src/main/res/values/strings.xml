@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Application</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="title_activity_swipe_layout">SwipeLayoutActivity</string>
+    <string name="title_activity_swipe_back">SwipeBackActivity</string>
+    <string name="title_activity_common">CommonActivity</string>
+    <string name="title_activity_app_compat">AppCompatActivity</string>
+
+</resources>
